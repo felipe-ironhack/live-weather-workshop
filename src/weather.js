@@ -56,7 +56,7 @@ function parseDailyData({ daily }) {
 	});
 }
 
-function parseHourlyData({ hourly, current }) {
+function parseHourlyData({ hourly, current, daily }) {
 	return hourly.time
 		.map((time, index) => {
 			return {
