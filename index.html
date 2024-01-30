@@ -6,57 +6,53 @@
 		<link rel="stylesheet" href="./styles/style.css" />
 		<title>Weather Storm App</title>
 	</head>
-	<body>
+	<body class="blur">
+		<nav>
+			<img
+				src="https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png"
+				alt="ironhack logo"
+			/>
+			<h1>Ironhack - Weather App</h1>
+		</nav>
 		<header class="header">
-			<nav>
-				<img
-					src="https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png"
-					alt="ironhack logo"
-				/>
-				<h1>Ironhack - Weather App</h1>
-			</nav>
+			<div class="header-current-temp">
+				<img src="./assets/icons/cloud.svg" alt="weather icon" class="weather-icon large" />
+				<div class="current-temp"><span class="temp">31</span><span class="unit">C</span></div>
+			</div>
 
-			<div class="current-weather-header">
-				<div class="header-current-temp">
-					<img src="./assets/icons/cloud.svg" alt="weather icon" class="weather-icon large" />
-					<div class="current-temp">
-						<span class="temp">31</span>&deg;<span class="unit">C</span>
+			<div class="header-day-info">
+				<div class="info-group">
+					<div class="label">High</div>
+					<div class="current-high">
+						<span class="value">32</span><span class="unit">&deg;C</span>
 					</div>
 				</div>
 
-				<div class="header-day-info">
-					<div class="info-group">
-						<div class="label">High</div>
-						<div class="current-high">
-							<span class="value">32</span>&deg;<span class="unit">C</span>
-						</div>
+				<div class="info-group">
+					<div class="label">Feels like</div>
+					<div class="current-fl">
+						<span class="value">25</span><span class="unit">&deg;C</span>
 					</div>
-					<div class="info-group">
-						<div class="label">Feels like</div>
-						<div class="current-fl">
-							<span class="value">25</span>&deg;<span class="unit">C</span>
-						</div>
-					</div>
+				</div>
 
-					<div class="info-group">
-						<div class="label">Wind</div>
-						<div class="current-wind">
-							<span class="value">9</span><span class="unit">km/h</span>
-						</div>
+				<div class="info-group">
+					<div class="label">Wind</div>
+					<div class="current-wind">
+						<span class="value">9</span><span class="unit"> km/h</span>
 					</div>
+				</div>
 
-					<div class="info-group">
-						<div class="label">Low</div>
-						<div class="current-low">
-							<span class="value">20</span>&deg;<span class="unit">C</span>
-						</div>
+				<div class="info-group">
+					<div class="label">Low</div>
+					<div class="current-low">
+						<span class="value">20</span><span class="unit">&deg;C</span>
 					</div>
+				</div>
 
-					<div class="info-group">
-						<div class="label">Precipitation</div>
-						<div class="current-precipitation">
-							<span class="value">8</span><span class="unit">mm</span>
-						</div>
+				<div class="info-group">
+					<div class="label">Precipitation</div>
+					<div class="current-precipitation">
+						<span class="value">8</span><span class="unit"> mm</span>
 					</div>
 				</div>
 			</div>
@@ -99,18 +95,265 @@
 				<img src="./assets/icons/sun.svg" alt="weather icon" class="weather-icon" />
 				<div class="day-temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
 			</div>
-    </section>
+		</section>
 
+		<table class="hourly-section">
+			<tbody>
+				<tr class="hour-row">
+					<td>
+						<div class="info-group">
+							<div class="label">Monday</div>
+							<div class="hour">
+								<span class="value">3PM</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<img src="./assets/icons/cloud-bolt.svg" class="weather-icon" />
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Temp</div>
+							<div class="temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">FL Temp</div>
+							<div class="fl-temp">
+								<span class="value">32</span>&deg;<span class="unit">C</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Wind</div>
+							<div class="wind"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Precipitation</div>
+							<div class="Precipitation">
+								<span class="value">32</span>&deg;<span class="unit">C</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class="hour-row">
+					<td>
+						<div class="info-group">
+							<div class="label">Monday</div>
+							<div class="hour">
+								<span class="value">3PM</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<img src="./assets/icons/cloud-bolt.svg" class="weather-icon" />
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Temp</div>
+							<div class="temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">FL Temp</div>
+							<div class="fl-temp">
+								<span class="value">32</span>&deg;<span class="unit">C</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Wind</div>
+							<div class="wind"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Precipitation</div>
+							<div class="Precipitation">
+								<span class="value">32</span>&deg;<span class="unit">C</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class="hour-row">
+					<td>
+						<div class="info-group">
+							<div class="label">Monday</div>
+							<div class="hour">
+								<span class="value">3PM</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<img src="./assets/icons/cloud-bolt.svg" class="weather-icon" />
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Temp</div>
+							<div class="temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">FL Temp</div>
+							<div class="fl-temp">
+								<span class="value">32</span>&deg;<span class="unit">C</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Wind</div>
+							<div class="wind"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Precipitation</div>
+							<div class="Precipitation">
+								<span class="value">32</span>&deg;<span class="unit">C</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class="hour-row">
+					<td>
+						<div class="info-group">
+							<div class="label">Monday</div>
+							<div class="hour">
+								<span class="value">3PM</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<img src="./assets/icons/cloud-bolt.svg" class="weather-icon" />
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Temp</div>
+							<div class="temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">FL Temp</div>
+							<div class="fl-temp">
+								<span class="value">32</span>&deg;<span class="unit">C</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Wind</div>
+							<div class="wind"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Precipitation</div>
+							<div class="Precipitation">
+								<span class="value">32</span>&deg;<span class="unit">C</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class="hour-row">
+					<td>
+						<div class="info-group">
+							<div class="label">Monday</div>
+							<div class="hour">
+								<span class="value">3PM</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<img src="./assets/icons/cloud-bolt.svg" class="weather-icon" />
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Temp</div>
+							<div class="temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">FL Temp</div>
+							<div class="fl-temp">
+								<span class="value">32</span>&deg;<span class="unit">C</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Wind</div>
+							<div class="wind"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+						</div>
+					</td>
+					<td>
+						<div class="info-group">
+							<div class="label">Precipitation</div>
+							<div class="Precipitation">
+								<span class="value">32</span>&deg;<span class="unit">C</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 
-      <template id="day-card-template">
-        <div class="day-card">
-          <div class="day"></div>
-          <img src="./assets/icons/sun.svg" alt="weather icon" class="weather-icon" />
-          <div class="day-temp"><span class="value"></span>&deg;<span class="unit"></span></div>
-        </div>
-      </template>
+		<template id="day-card-template">
+			<div class="day-card">
+				<div class="day"></div>
+				<img src="./assets/icons/sun.svg" alt="weather icon" class="weather-icon" />
+				<div class="day-temp"><span class="value"></span><span class="unit"></span></div>
+			</div>
+		</template>
 
-
+		<template id="hour-row-template">
+			<tr class="hour-row">
+				<td>
+					<div class="info-group">
+						<div class="day"></div>
+						<div class="hour">
+							<span class="value" data-hour></span>
+						</div>
+					</div>
+				</td>
+				<td>
+					<img src="" class="weather-icon" />
+				</td>
+				<td>
+					<div class="info-group">
+						<div class="label">Temp</div>
+						<div class="temp"><span class="value" data-temp-value></span><span class="unit" data-temp-unit></span></div>
+					</div>
+				</td>
+				<td>
+					<div class="info-group">
+						<div class="label">FL Temp</div>
+						<div class="fl-temp"><span class="value" data-fl-temp-value></span><span class="unit" data-fl-temp-unit></span></div>
+					</div>
+				</td>
+				<td>
+					<div class="info-group">
+						<div class="label">Wind</div>
+						<div class="wind"><span class="value" data-wind-value></span><span class="unit" data-wind-unit></span></div>
+					</div>
+				</td>
+				<td>
+					<div class="info-group">
+						<div class="label">Precipitation</div>
+						<div class="Precipitation"><span class="value" data-precipitation-value></span><span class="unit" data-precipitation-unit></span></div>
+					</div>
+				</td>
+			</tr>
+		</template>
 	</body>
 	<script type="module" src="./src/index.js"></script>
 </html>
