@@ -68,5 +68,5 @@ function parseHourlyData({ hourly, current }) {
 				iconCode: hourly.weather_code[index],
 			};
 		})
-		.filter(({ timestamp }) => timestamp <= current.time * 1000);
+		.filter(({ timestamp }) => timestamp >= current.time * 1000 && timestamp <= daily.time[1] * 1000);
 }
