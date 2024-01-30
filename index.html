@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<title>Weather Storm App</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav>
+				<img
+					src="https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png"
+					alt="ironhack logo"
+				/>
+				<h1>Ironhack - Weather App</h1>
+			</nav>
+
+			<div class="current-weather-header">
+				<div class="header-current-temp">
+					<img src="./assets/icons/cloud.svg" alt="weather icon" class="weather-icon large" />
+					<div class="current-temp">
+						<span class="temp">31</span>&deg;<span class="unit">C</span>
+					</div>
+				</div>
+
+				<div class="header-day-info">
+					<div class="info-group">
+						<div class="label">High</div>
+						<div class="current-high">
+							<span class="value">32</span>&deg;<span class="unit">C</span>
+						</div>
+					</div>
+					<div class="info-group">
+						<div class="label">Feels like</div>
+						<div class="current-fl">
+							<span class="value">25</span>&deg;<span class="unit">C</span>
+						</div>
+					</div>
+
+					<div class="info-group">
+						<div class="label">Wind</div>
+						<div class="current-wind">
+							<span class="value">9</span><span class="unit">km/h</span>
+						</div>
+					</div>
+
+					<div class="info-group">
+						<div class="label">Low</div>
+						<div class="current-low">
+							<span class="value">20</span>&deg;<span class="unit">C</span>
+						</div>
+					</div>
+
+					<div class="info-group">
+						<div class="label">Precipitation</div>
+						<div class="current-precipitation">
+							<span class="value">8</span><span class="unit">mm</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="daily-section">
+			<div class="day-card">
+				<div class="day">Monday</div>
+				<img src="./assets/icons/sun.svg" alt="weather icon" class="weather-icon" />
+				<div class="day-temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+			</div>
+			<div class="day-card">
+				<div class="day">Monday</div>
+				<img src="./assets/icons/sun.svg" alt="weather icon" class="weather-icon" />
+				<div class="day-temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+			</div>
+			<div class="day-card">
+				<div class="day">Monday</div>
+				<img src="./assets/icons/sun.svg" alt="weather icon" class="weather-icon" />
+				<div class="day-temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+			</div>
+			<div class="day-card">
+				<div class="day">Monday</div>
+				<img src="./assets/icons/sun.svg" alt="weather icon" class="weather-icon" />
+				<div class="day-temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+			</div>
+			<div class="day-card">
+				<div class="day">Monday</div>
+				<img src="./assets/icons/sun.svg" alt="weather icon" class="weather-icon" />
+				<div class="day-temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+			</div>
+			<div class="day-card">
+				<div class="day">Monday</div>
+				<img src="./assets/icons/sun.svg" alt="weather icon" class="weather-icon" />
+				<div class="day-temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+			</div>
+
+			<div class="day-card">
+				<div class="day">Monday</div>
+				<img src="./assets/icons/sun.svg" alt="weather icon" class="weather-icon" />
+				<div class="day-temp"><span class="value">32</span>&deg;<span class="unit">C</span></div>
+			</div>
+    </section>
+
+
+      <template id="day-card-template">
+        <div class="day-card">
+          <div class="day"></div>
+          <img src="./assets/icons/sun.svg" alt="weather icon" class="weather-icon" />
+          <div class="day-temp"><span class="value"></span>&deg;<span class="unit"></span></div>
+        </div>
+      </template>
+
+
+	</body>
+	<script type="module" src="./src/index.js"></script>
+</html>
